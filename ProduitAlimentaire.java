@@ -90,7 +90,7 @@ public class ProduitAlimentaire {
 		return (p.identifiant == this.identifiant && p.prix == this.prix && 
 				p.libelle.equals(this.libelle));
 	}
-	public String getDateExpiration(){
-		return dateExpiration;
+	public String getDateFabrication(){
+		return dateFabrication;
 	}
 }
