@@ -5,6 +5,7 @@ import java.util.Date;
 public class ProduitAlimentaire {
 	private int identifiant;
 	private String libelle;
+	private Date dateFabrication;
 	private String marque;
 	private float prix;
 	static int nbrProduit;
