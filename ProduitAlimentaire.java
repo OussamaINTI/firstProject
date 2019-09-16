@@ -6,6 +6,7 @@ public class ProduitAlimentaire {
 	private int identifiant;
 	private String libelle;
 	private Date dateFabrication;
+	
 	private String marque;
 	private float prix;
 	static int nbrProduit;
@@ -28,6 +29,10 @@ public class ProduitAlimentaire {
 		this.libelle = libelle;
 		this.marque = marque;
 		this.prix = prix;
+	}
+	public ProduitAlimentaire(int identifiant, String libelle) {
+		this.identifiant = identifiant;
+		this.libelle = libelle;
 	}
 
 	public void afficher() {
@@ -84,5 +89,8 @@ public class ProduitAlimentaire {
 	public boolean comparer(ProduitAlimentaire p) {
 		return (p.identifiant == this.identifiant && p.prix == this.prix && 
 				p.libelle.equals(this.libelle));
+	}
+	public String getDateExpiration(){
+		return dateExpiration;
 	}
 }
