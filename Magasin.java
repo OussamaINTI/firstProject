@@ -4,6 +4,7 @@ import com.inti.exception.MagasinPleineException;
 
 public class Magasin {
 	private int id;
+	private String nom;
 	private int capaciteProduit = 0;
 	private String adresse;
 	private ProduitAlimentaire[] tabProduit = new ProduitAlimentaire[50];
